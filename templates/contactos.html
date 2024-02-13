@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head> 
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title> Document </title>
+</head>
+<p> <u> Listado de Contactos </ul></p>
+
+<ul> 
+    {% for contacto in contactos %}
+    <li style="color:DarkBlue"> {{contacto}} </li> 
+    {% endfor %}
+</ul>
+</html>
