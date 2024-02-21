@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from TuPrimeraPagina_Urquizu.views import inicio
+from contacto.views import inicio
 urlpatterns = [
     path("contacto/", 
 include('contacto.urls')),

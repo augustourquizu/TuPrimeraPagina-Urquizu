@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from contacto.forms import Formulario
 from contacto.models import Contacto
 # Create your views here.
+def inicio(request):
+    return render(request, "inicio.html", locals())
+
 def contactos(request):
     contactos=Contacto.objects.all()
     return render(request, 'contactos.html', {"contactos":contactos})

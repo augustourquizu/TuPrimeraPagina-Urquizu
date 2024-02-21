@@ -5,16 +5,19 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title> Document </title>
 </head>
-<nav> 
-    <a href={% url "inicio"%}> Volver </a>
-</nav>
-<h1> Crear Contacto </h1>
+<body>
+    <nav> 
+        <a href={% url "inicio"%}> Volver </a>
+    </nav>
+    <h1> Crear Contacto </h1>
 
-<form action={% url "formulario" %} method='POST'>
-{% csrf_token %}
+    <form action={% url "formulario" %} method='POST'>
+    {% csrf_token %}
 
-<table> 
-    {{formulario.as_table}} 
-</table>
-<input type="submit" value="Crear Contacto">
-</form>
+    <table> 
+        {{formulario.as_table}} 
+    </table>
+    <input type="submit" value="Crear Contacto">
+    </form>
+</body>
+</html>

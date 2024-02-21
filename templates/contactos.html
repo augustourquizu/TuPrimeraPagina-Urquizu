@@ -5,15 +5,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title> Document </title>
 </head>
-<nav> 
-    <a href={% url "inicio"%}> Volver </a>
-</nav>
+<body>
+    <nav> 
+        <a href={% url "inicio"%}> Volver </a>
+    </nav>
+    
+    <h2> <u> Lista de Contactos </ul></h2>
 
-<h2> <u> Lista de Contactos </ul></h2>
-
-<ul> 
-    {% for contacto in contactos %}
-    <li style="color:DarkBlue"> {{contacto}} </li> 
-    {% endfor %}
-</ul>
+    <ul> 
+        {% for contacto in contactos %}
+        <li style="color:DarkBlue"> {{contacto}} </li> 
+        {% endfor %}
+    </ul>
+</body>
 </html>
